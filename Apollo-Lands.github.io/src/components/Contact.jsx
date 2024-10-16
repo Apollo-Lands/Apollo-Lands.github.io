@@ -13,6 +13,7 @@ import {
   Checkbox,
   FormLabel,
 } from '@mui/material';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -65,7 +66,98 @@ const Contact = () => {
     e.preventDefault();
     console.log('Form submitted:', formData);
     // You can integrate emailJS here to send the form data
+    emailjs
+    .send(
+      'service_pivkfdc', // Replace with your EmailJS service ID
+      'template_c8ivfnd', // Replace with your EmailJS template ID
+      formData, // Form data to send
+      'rSLgNCAvg4oCpoSq5' // Replace with your EmailJS public key
+    )
+    .then(
+      (result) => {
+        console.log('Email sent successfully:', result.text);
+        alert('Message sent successfully!');
+
+     // Reset the form with updated template variables
+          setFormData({
+            name: '',
+            email: '',
+            phone: '',
+            subject: '', // Default subject
+            message: '',
+            parcelNumber: '',
+            state: '',
+            county: '',
+            propertyZoning: '',
+            acres: '',
+            deedType: '',
+            yearAcquired: '',
+            acquisitionType: '',
+            annualTaxes: '',
+            hasHOA: 'No',
+            annualHOAFees: '',
+            propertyIssues: '',
+            propertyFeatures: '',
+            closestCity: '',
+            videoEditing: 'No',
+            mediaFormat: '',
+            desiredItems: '',
+            mediaType: '',
+            add360Tour: 'No',
+          });
+      },
+      (error) => {
+        console.error('Failed to send email:', error.text);
+        alert('Failed to send the message. Please try again later.');
+      }
+    );
   };
+
+// const handleSubmit = (e) => {
+//     e.preventDefault();
+  
+//     emailjs
+//       .send('your_service_id', 'your_template_id', formData, 'your_public_key')
+//       .then(
+//         (result) => {
+//           console.log('Email sent successfully:', result.text);
+//           alert('Message sent!');
+  
+//           // Reset the form with updated template variables
+//           setFormData({
+//             name: '',
+//             email: '',
+//             phone: '',
+//             subject: '', // Default subject
+//             message: '',
+//             parcelNumber: '',
+//             state: '',
+//             county: '',
+//             propertyZoning: '',
+//             acres: '',
+//             deedType: '',
+//             yearAcquired: '',
+//             acquisitionType: '',
+//             annualTaxes: '',
+//             hasHOA: 'No',
+//             annualHOAFees: '',
+//             propertyIssues: '',
+//             propertyFeatures: '',
+//             closestCity: '',
+//             videoEditing: 'No',
+//             mediaFormat: '',
+//             desiredItems: '',
+//             mediaType: '',
+//             add360Tour: 'No',
+//           });
+//         },
+//         (error) => {
+//           console.error('Failed to send email:', error.text);
+//           alert('Failed to send message. Please try again later.');
+//         }
+//       );
+//   };
+  
 
   return (
     <Box
@@ -154,12 +246,13 @@ const Contact = () => {
 
           {/* County Text Box */}
           <TextField
-            label="County (If unsure, list town/city or nearest incorporated town/city)"
+            label="County"
             variant="outlined"
             name="county"
             value={formData.county}
             onChange={handleChange}
             required
+            helperText="If unsure, please enter the nearest incorporated town or city to your property"
           />
 
           <TextField

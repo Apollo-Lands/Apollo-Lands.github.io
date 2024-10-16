@@ -7,6 +7,7 @@ import DroneVideography from "./components/DroneVideography";
 import PurchaseLand from "./components/PurchaseLand";
 import SellLand from "./components/SellLand";
 import Home from "./components/Home";
+import Footer from './components/Footer';
 
 
 
@@ -17,7 +18,9 @@ function App() {
     <>
 
       <NavBar/>
-
+      <div>
+        Have questions about an Offer Letter you received in the Mail? Click Here for answers.
+      </div>
 
 {/* <h1>The Best Investment On Earth, is EARTH!</h1> */}
 {/* I want the route "/" to be its own home page. When I put this text as a test layout for it, 
@@ -36,6 +39,8 @@ out a way to make it so that the content here in "/" does not stick to other pag
       <Route path="/SellLand" element={<SellLand/>} />
 
       </Routes>
+
+      <Footer/>
     </>
   )
 }
