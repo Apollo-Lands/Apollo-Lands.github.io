@@ -171,6 +171,13 @@ const Contact = () => {
         margin: 'auto',
       }}
     >
+        <Box>
+            <h2>
+                Have questions? Or are you ready to take the next step in your land journey? 
+                Send us an email by using the form below. 
+                Alternatively, you can also call and leave us a message on our voicemail box at 617-398-7155.
+            </h2>
+        </Box>
       {/* Name Field */}
       <TextField
         label="Name"

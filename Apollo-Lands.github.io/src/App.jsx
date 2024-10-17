@@ -8,6 +8,7 @@ import PurchaseLand from "./components/PurchaseLand";
 import SellLand from "./components/SellLand";
 import Home from "./components/Home";
 import Footer from './components/Footer';
+import {Link} from '@mui/material';
 
 
 
@@ -19,7 +20,8 @@ function App() {
 
       <NavBar/>
       <div>
-        Have questions about an Offer Letter you received in the Mail? Click Here for answers.
+        Have questions about an Offer Letter you received in the Mail? 
+        <Link> Click Here</Link> 
       </div>
 
 {/* <h1>The Best Investment On Earth, is EARTH!</h1> */}
@@ -31,7 +33,7 @@ out a way to make it so that the content here in "/" does not stick to other pag
 
       <Routes>
 
-      <Route path="/Home" element={<Home/>} />
+      <Route path="/" element={<Home/>} />
       <Route path="/About" element={<About/>} />
       <Route path="/Contact" element={<Contact/>} />
       <Route path="/DroneVideography" element={<DroneVideography/>} />

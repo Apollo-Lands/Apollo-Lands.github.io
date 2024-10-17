@@ -26,7 +26,7 @@ const NavBar = () => {
         {/* Left section: Apollo Lands Logo, Services, About */}
         <Box sx={{ display: 'flex', flexGrow: 1, alignItems: 'center' }}>
           {/* Apollo Lands Logo as an image */}
-          <Link to="/Home">
+          <Link to="/">
             <img
               src="/Apollo Lands Logo.png"
               alt="Apollo Lands Logo"
