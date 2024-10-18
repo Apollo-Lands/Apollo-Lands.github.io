@@ -54,7 +54,7 @@ export default function SellLand() {
   <h2>Ready to Sell? Let’s Get Started!</h2>
   <p>Fill out the form below, and we’ll help you turn your land into an opportunity.</p>
 
-  <div id="sell-your-land-form">
+  <div>
 
   </div>
 </div>

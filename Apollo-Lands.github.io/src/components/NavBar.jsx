@@ -21,7 +21,7 @@ const NavBar = () => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{backgroundColor: '#556B2F'}}>
       <Toolbar sx={{ minHeight: '90px' }}>
         {/* Left section: Apollo Lands Logo, Services, About */}
         <Box sx={{ display: 'flex', flexGrow: 1, alignItems: 'center' }}>
