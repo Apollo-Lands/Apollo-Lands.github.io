@@ -78,7 +78,7 @@ export default function SellLand() {
               <li>A desire to liquidate the asset quickly</li>
             </ul>
           </div>
-          <img className="step-image" src="/thinker.jpg" alt="Step 1" />
+          <img className="step-image" src="/images/thinker.jpg" alt="Step 1" />
         </div>
   
         <div className="step-container">
@@ -93,7 +93,7 @@ export default function SellLand() {
               <li>We communicate with the county government to ensure taxes, liens, and encumbrances are clear</li>
             </ul>
           </div>
-          <img className="step-image" src="/binder_pile.jpg" alt="Step 2" />
+          <img className="step-image" src="/images/binder_pile.jpg" alt="Step 2" />
         </div>
   
         <div className="step-container">
@@ -104,7 +104,7 @@ export default function SellLand() {
               helping you financially even if the market is unfavorable.
             </p>
           </div>
-          <img className="step-image" src="/tax_deductible.jpg" alt="Step 3" />
+          <img className="step-image" src="/images/tax_deductible.jpg" alt="Step 3" />
         </div>
   
         <div className="step-container">
@@ -112,7 +112,7 @@ export default function SellLand() {
             <h2>Step 4: Negotiate and Create a Purchase and Sale Agreement</h2>
             <p>We draft the Purchase and Sale Agreement on your behalf to ensure a smooth transaction.</p>
           </div>
-          <img className="step-image" src="/hand_shake_house.jpg" alt="Step 4" />
+          <img className="step-image" src="/images/hand_shake_house.jpg" alt="Step 4" />
         </div>
   
         <div className="step-container">
@@ -120,7 +120,7 @@ export default function SellLand() {
             <h2>Step 5: Transfer Ownership and File the Deed</h2>
             <p>We handle deed preparation, notarization, and submission to the county for official recording.</p>
           </div>
-          <img className="step-image" src="/slow sloth.jpg" alt="Step 5" />
+          <img className="step-image" src="/images/slow sloth.jpg" alt="Step 5" />
         </div>
   
         <div className="step-container">
@@ -128,7 +128,7 @@ export default function SellLand() {
             <h2>Step 6: Receive Payment and Finalize the Sale</h2>
             <p>With the deed recorded and payment completed, you are free from all obligations.</p>
           </div>
-          <img className="step-image" src="/money_in_hand.jpeg" alt="Step 6" />
+          <img className="step-image" src="/images/money_in_hand.jpeg" alt="Step 6" />
         </div>
   <div style={{ textAlign: 'center' }}>
   <h1>Ready to Sell? Let’s Get Started!</h1>

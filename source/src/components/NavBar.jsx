@@ -28,7 +28,7 @@ const NavBar = () => {
           {/* Apollo Lands Logo as an image */}
           <Link to="/">
             <img
-              src="/Apollo Lands Logo.png"
+              src="/images/Apollo Lands Logo.png"
               alt="Apollo Lands Logo"
               style={{ height: '160px', marginRight: '16px' }}
             />

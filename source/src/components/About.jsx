@@ -44,7 +44,7 @@ export default function About() {
               {/* Founder Image */}
           <div className="founder-image">
             {/* Place the founder's image here */}
-            <img src="/Military_Portrait.jpg" alt="Founder Roy Badell" />
+            <img src="/images/Military_Portrait.jpg" alt="Founder Roy Badell" />
 
           </div>
           <div className="founder-text">
