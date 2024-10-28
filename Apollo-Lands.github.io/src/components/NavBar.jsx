@@ -47,12 +47,13 @@ const NavBar = () => {
             open={Boolean(anchorEl)}
             onClose={handleClose}
           >
+                        <MenuItem onClick={handleClose} component={Link} to="/SellLand">
+              Sell Land
+            </MenuItem>
             <MenuItem onClick={handleClose} component={Link} to="/PurchaseLand">
               Purchase Land
             </MenuItem>
-            <MenuItem onClick={handleClose} component={Link} to="/SellLand">
-              Sell Land
-            </MenuItem>
+
             <MenuItem
               onClick={handleClose}
               component={Link}

@@ -21,10 +21,7 @@ function App() {
     <>
 
       <NavBar/>
-      <div id="offerAlert">
-        Have questions about an Offer Letter you received in the Mail? 
-        <Link> Click Here</Link> 
-      </div>
+
 
 
       <Routes>
@@ -37,7 +34,10 @@ function App() {
       <Route path="/SellLand" element={<SellLand/>} />
 
       </Routes>
-
+      <div id="offerAlert">
+        Have questions about an Offer Letter you received in the Mail? 
+        <Link> Click Here</Link> 
+      </div>
       <Footer/>
     </>
   )

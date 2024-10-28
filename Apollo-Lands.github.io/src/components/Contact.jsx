@@ -113,51 +113,6 @@ const Contact = () => {
     );
   };
 
-// const handleSubmit = (e) => {
-//     e.preventDefault();
-  
-//     emailjs
-//       .send('your_service_id', 'your_template_id', formData, 'your_public_key')
-//       .then(
-//         (result) => {
-//           console.log('Email sent successfully:', result.text);
-//           alert('Message sent!');
-  
-//           // Reset the form with updated template variables
-//           setFormData({
-//             name: '',
-//             email: '',
-//             phone: '',
-//             subject: '', // Default subject
-//             message: '',
-//             parcelNumber: '',
-//             state: '',
-//             county: '',
-//             propertyZoning: '',
-//             acres: '',
-//             deedType: '',
-//             yearAcquired: '',
-//             acquisitionType: '',
-//             annualTaxes: '',
-//             hasHOA: 'No',
-//             annualHOAFees: '',
-//             propertyIssues: '',
-//             propertyFeatures: '',
-//             closestCity: '',
-//             videoEditing: 'No',
-//             mediaFormat: '',
-//             desiredItems: '',
-//             mediaType: '',
-//             add360Tour: 'No',
-//           });
-//         },
-//         (error) => {
-//           console.error('Failed to send email:', error.text);
-//           alert('Failed to send message. Please try again later.');
-//         }
-//       );
-//   };
-  
 
   return (
     <Box
@@ -174,9 +129,9 @@ const Contact = () => {
         <Box>
             <h2>
                 Have questions? Or are you ready to take the next step in your land journey? 
-                Send us an email by using the form below. 
-                Alternatively, you can also call and leave us a message on our voicemail box at 617-398-7155.
             </h2>
+            <p>  Send us an email by using the form below. 
+                Alternatively, you can also call and leave us a message on our <strong>voicemail box at 617-398-7155</strong>.</p>
         </Box>
       {/* Name Field */}
       <TextField
