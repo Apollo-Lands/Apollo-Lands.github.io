@@ -33,7 +33,7 @@ export default function Home() {
   
           <section className="card">
             <h3>Recreation: Your Playground</h3>
-            <img className="card-image" src="public/womand_dog_tent.jpg" alt="Recreation" />
+            <img className="card-image" src="/womand_dog_tent.jpg" alt="Recreation" />
             <div className="card-content">
               <p>Land isn’t just a place to live; it’s also a place to play.</p>
               <ul>
